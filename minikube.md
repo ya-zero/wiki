@@ -71,6 +71,7 @@ spec:
 
 
 add to /etc/nginx/nginx.conf
+```
 stream {
   server {
       listen ip_host_machine:81;
@@ -78,15 +79,15 @@ stream {
       proxy_pass minikube_ip:80;
   }
 }
+```
 
-on notebook C:\Windows\System32\drivers\etc\hosts
-C:\Windows\System32\drivers\etc\hosts
-
+> on notebook C:\Windows\System32\drivers\etc\hosts
+> ip  domainname
 
 
 in browse www.yazero.ru:81
-
+```
 My first app Flask in Docker.
 Server:www.yazero.ru
 Clinet:172.17.0.10
-
+```
