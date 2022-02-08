@@ -48,7 +48,10 @@ spec:
       targetPort: 5000  # Port on POD
   type: ClusterIP
 ```
-
+### https://projectcontour.io/getting-started/
+### установка ingress controller 
+kubectl apply -f https://projectcontour.io/quickstart/contour.yaml
+ 
 ## ingress-hosts.yml
 ```
 apiVersion: networking.k8s.io/v1
