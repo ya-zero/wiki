@@ -1,8 +1,8 @@
 test in minikube
 
-#kubectl create deployment yazero-depl --image yazerohub/my_flask_app:latest
-#kubectl expose deployment yazero-depl --type=ClusterIP --port 5000
-#kubectl scale deployment yazero_depl --replicas 2
+> #kubectl create deployment yazero-depl --image yazerohub/my_flask_app:latest
+> #kubectl expose deployment yazero-depl --type=ClusterIP --port 5000
+> #kubectl scale deployment yazero_depl --replicas 2
 
 ## k8s.yml
 ```
