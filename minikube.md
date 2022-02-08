@@ -96,9 +96,9 @@ Clinet:172.17.0.10
 
 
 access to dashboard minikube 
-
+ > root@minikube:/#minikube dashboard
 minikube host:
- kubectl proxy &  
+ >kubectl proxy &  
 notebook:   
   ssh -L 12345:localhost:8001 ubuntu@10.238.62.15  
 link:  
