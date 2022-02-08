@@ -6,6 +6,7 @@ test in minikube
 
 ## k8s.yml
 ```
+---
 apiVersion : apps/v1
 kind: Deployment
 metadata:
@@ -29,7 +30,7 @@ spec:
           ports:
             - containerPort: 5000
 
----
+
 apiVersion: v1
 kind: Service
 metadata:
