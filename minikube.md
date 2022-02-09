@@ -102,7 +102,7 @@ minikube host:
  > kubectl proxy &  
 
 notebook:   
- > ssh -L 12345:localhost:8001 ubuntu@10.238.62.15  
+ > ssh -L 12345:localhost:8001 ubuntu@remote_server  
 
 link:  
  > http://localhost:12345/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/pod?namespace=default
