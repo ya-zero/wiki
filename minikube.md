@@ -106,3 +106,28 @@ notebook:
 
 link:  
  > http://localhost:12345/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/pod?namespace=default
+
+
+
+--add loadbalancer 
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: yazero-custom-svc
+  labels:
+    env  : prod
+    owner: yazerohub
+spec:
+  selector:
+    project: flask-app    # Selecting PODS with those Labels
+  ports:
+    - name      : app-listener
+      protocol  : TCP
+      port      : 80  # Port on Load Balancer
+      targetPort: 5000  # Port on POD
+  type: LoadBalancer
+  load-balancer-ip: 10.238.59.36
+
+
